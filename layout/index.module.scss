@@ -1,15 +1,20 @@
-.layout-header {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-}
+.layout {
+  .layout-header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
 
-.site-layout {
-  flex: 1;
-  margin-top: 36px;
-}
+  .site-layout {
+    flex: 1;
+    margin-top: 36px;
+  }
 
-.ant-layout-header {
-  height: 36px;
-  background: #ffffff;
+  :global {
+    .ant-layout-header {
+      height: 36px;
+      line-height: 36px;
+      background: #4456a7;
+    }
+  }
 }

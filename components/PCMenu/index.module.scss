@@ -1,0 +1,53 @@
+.pcmenu {
+  .logo {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  a {
+    position: relative;
+    padding: 0 10px;
+    cursor: pointer;
+    line-height: 36px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bolder;
+  }
+  a:hover {
+    color: #000;
+  }
+  a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -14px;
+    margin-top: -14px;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 3px solid #ffd03f;
+    background-color: #4456a7;
+    z-index: -1;
+    transform: scale(0);
+  }
+  a:hover::after {
+    transform: scale(1);
+  }
+  a.selected::after {
+    background-color: #ffd03f;
+    transition: none;
+    transform: scale(1);
+    animation: menu-selected 0.15s ease-out forwards;
+  }
+
+  @keyframes menu-selected {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

@@ -2,7 +2,7 @@ import { Row, Col, Card } from 'antd'
 
 export default function Home() {
   return (
-    <main className='about'>
+    <div className='about'>
       <Row gutter={[16, 16]}>
         <Col sm={24} xs={24} md={18}>
           <Row gutter={[16, 16]}>
@@ -46,6 +46,6 @@ export default function Home() {
           </Row>
         </Col>
       </Row>
-    </main>
+    </div>
   )
 }
