@@ -22,18 +22,18 @@
   }
   &-photo {
     background-color: #ffd03f;
-    .ant-col-md-24 {
-      flex: 2 0 100%;
-    }
   }
   &-email {
     background-color: #ff98c6;
-    .ant-col-md-24 {
-      flex: 1 0 100%;
-    }
   }
   &-about-me {
     background-color: #fffbf3;
+    .city {
+      margin-bottom: 10px;
+    }
+    .city-sky {
+      flex: 1;
+    }
   }
   &-github {
     background-color: #817ef8;
@@ -42,12 +42,106 @@
     background-color: #2fd2db;
   }
   &-where {
-    background-color: #2fd2db;
+    background-color: #31037d;
   }
   &-friends {
     background-color: #ff98c6;
   }
+
+  .friends {
+    .ant-card-body {
+      justify-content: start;
+      .friend-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24px;
+        width: 100%;
+        .pre-friend {
+          width: 60%;
+          text-align: center;
+          margin: 12px auto;
+          line-height: 36px;
+          height: 36px;
+          border-radius: 18px;
+          background: #ffbcda;
+          font-size: 0.8rem;
+          white-space: nowrap;
+          display: flex;
+          span {
+            width: 40%;
+            font-size: 1rem;
+            color: #4e2a2a;
+          }
+          a {
+            flex: 1;
+            color: #aa6584;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .img-wrap-100 {
+    width: 100%;
+  }
+
+  .img-wrap-60 {
+    width: 60%;
+  }
+
+  .img-wrap-40 {
+    width: 40%;
+  }
+
+  .img-wrap-30 {
+    width: 30%;
+  }
+
+  .img-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 0.87rem;
+    font-weight: bolder;
+  }
+
+  .icon-link {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 1rem;
+    right: 1rem;
+    background: url(/images/toLink.png) no-repeat 50%;
+  }
+
   .ant-row {
     height: 100%;
+  }
+
+  .ant-card-body {
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .column {
+      flex-direction: column;
+      .ant-col-md-24.photo,
+      .ant-col-md-24.about-me,
+      .ant-col-md-24.friends {
+        flex: 2;
+      }
+      .ant-col-md-24.email,
+      .ant-col-md-24.about-github-wechat,
+      .ant-col-md-24.where {
+        flex: 1;
+      }
+    }
   }
 }
