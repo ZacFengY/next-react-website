@@ -1,0 +1,17 @@
+.cloud {
+  display: block;
+  position: absolute;
+  img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 20;
+    margin-top: -28%;
+  }
+  strong {
+    position: relative;
+    padding: 0 14px;
+    z-index: 30;
+    font-size: 1.2rem;
+  }
+}

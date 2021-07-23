@@ -28,6 +28,12 @@
   }
   &-about-me {
     background-color: #fffbf3;
+    .city {
+      margin-bottom: 10px;
+    }
+    .city-sky {
+      flex: 1;
+    }
   }
   &-github {
     background-color: #817ef8;
@@ -36,10 +42,49 @@
     background-color: #2fd2db;
   }
   &-where {
-    background-color: #2fd2db;
+    background-color: #31037d;
   }
   &-friends {
     background-color: #ff98c6;
+  }
+
+  .friends {
+    .ant-card-body {
+      justify-content: start;
+      .friend-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24px;
+        width: 100%;
+        .pre-friend {
+          width: 60%;
+          text-align: center;
+          margin: 12px auto;
+          line-height: 36px;
+          height: 36px;
+          border-radius: 18px;
+          background: #ffbcda;
+          font-size: 0.8rem;
+          white-space: nowrap;
+          display: flex;
+          span {
+            width: 40%;
+            font-size: 1rem;
+            color: #4e2a2a;
+          }
+          a {
+            flex: 1;
+            color: #aa6584;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .img-wrap-100 {
+    width: 100%;
   }
 
   .img-wrap-60 {
