@@ -10,5 +10,6 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 'off',
+    '@next/next/no-img-element': 'off',
   },
 }
