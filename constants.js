@@ -2,7 +2,7 @@ export const MENUS = []
 
 export const friends = [
   {
-    name: 'Blade',
+    name: 'Blade22',
     link: '',
     description: 'UI大佬',
   },
