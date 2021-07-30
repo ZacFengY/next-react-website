@@ -12,7 +12,7 @@ const Cloud = props => {
   }
   return (
     <span className={style.cloud} style={selfStyle}>
-      <img src='/images/cloud.png' width={126} height={84} alt='' />
+      <img src='/images/cloud.png' alt='' />
       <strong>{props.text}</strong>
     </span>
   )

@@ -33,6 +33,7 @@
     }
     .city-sky {
       flex: 1;
+      position: relative;
     }
   }
   &-github {
@@ -148,6 +149,13 @@
 
 @media (max-width: 768px) {
   .about {
-    margin: 0px 0px;
+    margin: 0px 0.2rem;
+    height: auto;
+    .ant-col {
+      min-height: 50vw;
+    }
+    .about-me {
+      min-height: 300px;
+    }
   }
 }

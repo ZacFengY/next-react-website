@@ -1,5 +1,6 @@
 import { Row, Col, Card } from 'antd'
 import Image from 'next/image'
+import AboutMe from '../components/AboutMe'
 import Label from '../components/Label'
 import { friends } from '../constants'
 
@@ -47,10 +48,7 @@ export default function Home() {
               <Row gutter={[16, 16]} className='column'>
                 <Col sm={24} xs={24} md={24} className='about-me'>
                   <Card title='About Me' className='about-card about-about-me'>
-                    <div className='img-wrap-100 city-sky'>
-                      <Label />
-                    </div>
-                    <div className='img-wrap-100 city'>
+                    {/* <div className='img-wrap-100 city'>
                       <Image
                         layout='responsive'
                         src='/images/citybg.png'
@@ -59,6 +57,10 @@ export default function Home() {
                         width={220}
                         height={50}
                       />
+                    </div> */}
+                    <AboutMe />
+                    <div className='img-wrap-100 city-sky'>
+                      <Label />
                     </div>
                   </Card>
                 </Col>
